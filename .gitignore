@@ -1,0 +1,8 @@
+/.idea
+/.sass-cache
+/config/development.js
+/coverage
+/node_modules
+/public
+/typings
+/index.js
