@@ -10,6 +10,15 @@ export default {
     sourcemap: false,
     deps: ['lint:scripts-server'],
     options: {
+      browserField: false,
+      builtins: false,
+      commondir: false,
+      insertGlobalVars: {
+        process: undefined,
+        global: undefined,
+        'Buffer.isBuffer': undefined,
+        Buffer: undefined,
+      },
       transform: [babelify, envify],
     },
   },
